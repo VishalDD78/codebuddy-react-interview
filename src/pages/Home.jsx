@@ -1,5 +1,7 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import MultiForm from "../components/MultiForm";
+import { Box } from "@mui/material";
 
 const Home = () => {
   return (
@@ -17,6 +19,10 @@ const Home = () => {
         amet quam aliquam quas incidunt debitis sit aut a soluta quisquam repellat dignissimos qui.
         Perspiciatis similique quaerat reiciendis nam aliquam?
       </p>
+
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <MultiForm />
+      </Box>
 
       <Link to="/posts" className="flex items-center text-blue-600 hover:underline">
         Posts
